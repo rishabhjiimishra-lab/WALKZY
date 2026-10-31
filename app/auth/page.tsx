@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 const accounts = [
@@ -11,6 +11,10 @@ const accounts = [
 ];
 
 export default function AuthPage() {
+  return <Suspense fallback={<main className="auth-page"><div className="auth-card"><a className="brand" href="/">WALKZY</a><p className="muted">Loading sign-in…</p></div></main>}><AuthForm /></Suspense>;
+}
+
+function AuthForm() {
   const search = useSearchParams();
   const [email, setEmail] = useState("customer@demo.walkzy");
   const [password, setPassword] = useState("CustomerDemo123!");

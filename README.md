@@ -1,6 +1,6 @@
 # WALKZY
 
-WALKZY is a mobile-first hyperlocal delivery MVP for gated communities. It connects customers with local merchants and verified walkers who are already travelling nearby.
+WALKZY is a white-label neighbourhood delivery platform connecting residents, local merchants, and community walkers. This repository contains a mobile-first hyperlocal delivery MVP for gated communities, with smart route matching and demo role-based workflows.
 
 ## Run on Windows
 
